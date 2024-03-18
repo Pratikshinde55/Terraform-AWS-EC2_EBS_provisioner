@@ -39,7 +39,7 @@ Create Folder and here i put my HCL code:
 ![Screenshot 2024-03-17 175311](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/9cd9079a-0af4-4743-ab05-74366dc5865f)
 
 
-⚡Step-1 : (Plugin with AWS provider)
+⚡Step-1 : (Plugin with AWS provider)⚡
 
 In Terraform, the "terraform" block is a mandatory block that is used to define Terraform-specific settings and configurations for a Terraform project,
 
@@ -50,7 +50,7 @@ required_version: specifies the minimum Terraform version required to apply the 
 ![pro-plugin](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/252be755-95e4-462a-a4fc-d16d11b9b7c2)
 
 
-⚡Step-2 :(AWS login-credentials)
+⚡Step-2 :(AWS login-credentials)⚡
 
 Here i use "AWS CLI " tool for login , for this i create IAM user on AWS & get access_key, secret_key and paste on cli .Use Default profile:
 (static credential)
@@ -71,7 +71,7 @@ profile specifies the name of the AWS profile, Terraform will use the access key
 ![login-terrs](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/da4df432-6953-4e43-999e-f2301a956dce)
 
 
-⚡Step-3 : (terraform init)
+⚡Step-3 : (terraform init)⚡
 
 "terraform init" command initializes a Terraform working directory, installing necessary plugins and initializing backend configurations.
 
@@ -81,7 +81,7 @@ profile specifies the name of the AWS profile, Terraform will use the access key
  ![teraf](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/02a301de-75e0-4bde-8d33-bbfd7f03fd7f)
 
 
- ⚡Step-4 : (EC2-instance block)
+ ⚡Step-4 : (EC2-instance block)⚡
 
 ami : specifies the Amazon Machine Image (AMI) ID to use for launching the EC2 instance.
 
@@ -97,7 +97,7 @@ instance_type : This specifies the instance type for the EC2 instance.
 ![ec2-file](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/ffea9e24-62b9-4738-9668-efb83635eacf)
 
 
-⚡Step-5 :(variable for resources)
+⚡Step-5 :(variable for resources)⚡
 
 Here i put varibles which call in resource.
 
@@ -111,7 +111,7 @@ Here i put varibles which call in resource.
 ![variable-tera](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/79721873-987a-449f-a5f2-0bca02401de8)
 
  
-⚡Step-6 : (create 'ebs' volume and 'attached' with 'ec2')
+⚡Step-6 : (create 'ebs' volume and 'attached' with 'ec2')⚡
 
 "aws_ebs_volume" : this is resource type for create EBS volume.
  
@@ -139,7 +139,7 @@ Here i put varibles which call in resource.
 ![ebs-tera](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/4273526b-8987-4d70-98c8-e5404d2bba5f)
  
 
-⚡Step-7 : (Configuration-install httpd and start service)
+⚡Step-7 : (Configuration-install httpd and start service)⚡
 
 "null_resource" : It is a type of resource that doesn't correspond to any specific infrastructure component.
  A "null_resource" in Terraform is like an empty container that allows you to execute custom commands or scripts without directly creating any infrastructure. 
@@ -164,7 +164,7 @@ Here i put varibles which call in resource.
 ![null-httpd](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/4ac99df2-c457-45fd-b381-36b15ce28c5a)
 
 
-⚡Step-8 : (mount ebs volume & Deploy webpage)
+⚡Step-8 : (mount ebs volume & Deploy webpage)⚡
 
 Here use null_resource for provisioner remote configuration,
 
@@ -179,7 +179,7 @@ depends_on = it is attribute, Here give referance this null resource run only wh
 
 ![null-volume-webpage](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/c5355acf-d075-458d-bff5-376641d77594)
 
-⚡Step-9 : (use local-exec provisioner)
+⚡Step-9 : (use local-exec provisioner)⚡
 
 Here use null resource & sub block is  provisioner and provisioner type is "local-exec".
 
@@ -193,7 +193,7 @@ command = The command attribute specifies the command to be executed locally whe
 ![destroy](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/4df26a8b-df40-4de4-9954-a60c893892f7)
 
 
-⚡Step-10 : (Terraforn apply)
+⚡Step-10 : (Terraforn apply)⚡
 
 now apply terraform in one command the whole infrastructure and configuration.
 
