@@ -1,5 +1,5 @@
 # Terraform-AWSprovider-webserver-configuration
-Using Terraform-configuration of webserver on AWS cloud fully automation
+
 
 ![Screenshot 2024-03-18 155915](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/457bebee-36f7-4817-8f79-2677c334bd45)
 
@@ -18,4 +18,14 @@ Terraform uses a declarative language called HashiCorp Configuration Language (H
 
 🌟Terraform Registry : "registry.terrafrom.io"
 
-The Terraform Registry is a centralized repository for discovering, sharing, and managing Terraform modules and providers
+The Terraform Registry is a centralized repository for discovering, sharing, and managing Terraform modules and providers.
+
+
+❄️Using Terraform, plugin with AWS provider & Configure Webserver ❄️ 
+
+I installed Terraform in my Local machine , 'Terraform Binary download for window 386
+(link: https://developer.hashicorp.com/terraform/install#windows)
+
+
+![Screenshot 2024-03-17 175311](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/9cd9079a-0af4-4743-ab05-74366dc5865f)
+
