@@ -235,7 +235,13 @@ check on Browser (public ip of instance)
 ![Screenshot 2024-03-17 201220](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/4f8c3ba1-6c58-4bfc-89fa-1ba1d3649246)
 
 
+Here :
+On AWS console see instance and volume created:
 
+![Screenshot 2024-03-17 200520](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/5f30561e-71b3-4af9-a671-3b4d017da2b7)
+
+
+![Screenshot 2024-03-17 200443](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/f558e46b-2637-443b-a059-120589cd7f20)
 
 
 
