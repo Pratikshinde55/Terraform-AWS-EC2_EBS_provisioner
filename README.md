@@ -74,7 +74,8 @@ profile specifies the name of the AWS profile, Terraform will use the access key
 
 "terraform init" command initializes a Terraform working directory, installing necessary plugins and initializing backend configurations.
 
-  #terraform init
+
+       #terraform init
 
  
 
