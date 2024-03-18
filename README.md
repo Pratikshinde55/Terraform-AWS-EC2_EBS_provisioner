@@ -77,6 +77,11 @@ profile specifies the name of the AWS profile, Terraform will use the access key
 
        #terraform init
 
+ ![teraf](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/02a301de-75e0-4bde-8d33-bbfd7f03fd7f)
+
+ 
+      
+
  
 
 
