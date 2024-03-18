@@ -14,3 +14,8 @@ Terraform is vendor-neutral, meaning it supports multiple cloud providers, as we
 🌟Declarative Configuration Language:
 
 Terraform uses a declarative language called HashiCorp Configuration Language (HCL) to define infrastructure resources and their configurations.
+
+
+🌟Terraform Registry : "registry.terrafrom.io"
+
+The Terraform Registry is a centralized repository for discovering, sharing, and managing Terraform modules and providers
