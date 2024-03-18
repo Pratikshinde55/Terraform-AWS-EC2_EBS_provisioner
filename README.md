@@ -164,6 +164,20 @@ Here i put varibles which call in resource.
 ![null-httpd](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/4ac99df2-c457-45fd-b381-36b15ce28c5a)
 
 
+⚡Step-8 : (mount ebs volume & Deploy webpage)
+
+Here use null_resource for provisioner remote configuration,
+
+ provisioner inline [] =  inline attribute,it formats the attached EBS volume (sudo mkfs.exf4 /dev/sdh/), mounts it to a directory (sudo mount /dev/xvdh 
+ /var/www/html), and creates an index.html file with the content "Hi welcome..." in the mounted directory (sudo sh -c 'echo "Hi welcome..." > 
+ /var/www/html/index.html').
+
+depends_on = it is attribute, Here give referance this null resource run only when ec2 and EBS volume ia attached  aws_volume_attachment.my_ec2_ebs. 
+
+
+    #notepad null_resource.tf
+
+![null-volume-webpage](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/c5355acf-d075-458d-bff5-376641d77594)
 
 
 
