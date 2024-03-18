@@ -41,3 +41,5 @@ In Terraform, the "terraform" block is a mandatory block that is used to define 
 
 required_providers: To plugin with provider
 
+required_version: specifies the minimum Terraform version required to apply the configuration.
+
