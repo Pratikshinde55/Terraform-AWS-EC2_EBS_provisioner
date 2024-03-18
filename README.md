@@ -11,6 +11,6 @@ Terraform is a tool used for managing infrastructure as code,Terraform can easil
 
 Terraform is vendor-neutral, meaning it supports multiple cloud providers, as well as on-premises infrastructure providers, without locking you into a specific vendor's ecosystem.
 
-HCL:
+Declarative Configuration Language:
 
 Terraform uses a declarative language called HashiCorp Configuration Language (HCL) to define infrastructure resources and their configurations.
