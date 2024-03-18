@@ -80,9 +80,9 @@ profile specifies the name of the AWS profile, Terraform will use the access key
  ![teraf](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/02a301de-75e0-4bde-8d33-bbfd7f03fd7f)
 
 
- ⚡Step-4 :(EC2-instance block)
+ ⚡Step-4 : (EC2-instance block)
 
-ami : his specifies the Amazon Machine Image (AMI) ID to use for launching the EC2 instance.
+ami : specifies the Amazon Machine Image (AMI) ID to use for launching the EC2 instance.
 
 key_name : This specifies the name of the key pair to use for SSH authentication when accessing the EC2 instance.
 
@@ -95,6 +95,19 @@ instance_type : This specifies the instance type for the EC2 instance.
 
 ![ec2-file](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/ffea9e24-62b9-4738-9668-efb83635eacf)
 
+
+⚡Step-5 :(variable for resources)
+
+Here i put varibles which call in resource.
+
+"default" : attribute specifies the default value.
+
+"type" : The type attribute specifies the "type" of the variable, which is string.
+
+
+      #notepad variables.tf
+
+![variable-tera](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/79721873-987a-449f-a5f2-0bca02401de8)
 
  
 
