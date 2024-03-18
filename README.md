@@ -179,6 +179,18 @@ depends_on = it is attribute, Here give referance this null resource run only wh
 
 ![null-volume-webpage](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/c5355acf-d075-458d-bff5-376641d77594)
 
+⚡Step-9 : (use local-exec provisioner)
+
+Here use null resource & sub block is  provisioner and provisioner type is "local-exec".
+
+when = The when attribute is set to "destroy", specifying that the command should be executed only when the resource is being destroyed.
+
+command = The command attribute specifies the command to be executed locally when the resource is destroyed.(when terrafrom destroy use then it automatically save file in local machine)
+
+
+    #notepad null_resource_local.tf
+
+![destroy](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/4df26a8b-df40-4de4-9954-a60c893892f7)
 
 
 
