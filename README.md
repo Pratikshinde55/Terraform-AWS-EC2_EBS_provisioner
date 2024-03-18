@@ -53,6 +53,7 @@ required_version: specifies the minimum Terraform version required to apply the 
 ⚡Step-2 :(AWS login-credentials)
 
 Here i use "AWS CLI " tool for login , for this i create IAM user on AWS & get access_key, secret_key and paste on cli .Use Default profile:
+(static credential)
 
 ![acees-aws-cli](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/011c43cd-e582-4ef1-be97-e6a494095077)
 
@@ -140,7 +141,22 @@ Here i put varibles which call in resource.
 
 ⚡Step-7 : (Configuration-install httpd and start service)
 
+"null_resource" : It is a type of resource that doesn't correspond to any specific infrastructure component.
+ A "null_resource" in Terraform is like an empty container that allows you to execute custom commands or scripts without directly creating any infrastructure. 
+ It's useful for performing tasks like initializing configurations or running commands on local or remote systems.
 
+ connection = is sub block in null resource where put connection information. 
+ 
+ private_key = file("C:/psAWS.pem") : here write of my private key which is used to create instance and which instance want to connect by ssh.
+
+ host = is attribute where put public ip of instance & here use attribute referance aws_instance.os1.public_i
+
+ provisioner  : It is sub block and use "remote-exec" provisioner type for remote configuration.
+
+  inline = The inline attribute contains a list of commands to be executed.
+
+  depends_on = The depends_on attribute specifies that this null_resource depends on the completion of the resource defined by aws_volume_attachment.my_ec2_ebs
+ 
      
      #notepad null_httpd.tf
 
