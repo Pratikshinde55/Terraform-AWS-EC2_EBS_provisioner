@@ -33,5 +33,7 @@ To check terraform is installed or not :
      #terraform version
 
 
+Create Folder and here i put my HCL code:
+
 ![Screenshot 2024-03-17 175311](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/9cd9079a-0af4-4743-ab05-74366dc5865f)
 
