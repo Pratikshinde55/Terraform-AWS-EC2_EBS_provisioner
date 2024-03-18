@@ -38,6 +38,7 @@ Create Folder and here i put my HCL code:
 
 ![Screenshot 2024-03-17 175311](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/9cd9079a-0af4-4743-ab05-74366dc5865f)
 
+
 ⚡Step-1 : (Plugin with AWS provider)
 
 In Terraform, the "terraform" block is a mandatory block that is used to define Terraform-specific settings and configurations for a Terraform project,
@@ -47,6 +48,11 @@ required_providers: To plugin with provider
 required_version: specifies the minimum Terraform version required to apply the configuration.
 
 ![pro-plugin](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/252be755-95e4-462a-a4fc-d16d11b9b7c2)
+
+
+⚡Step-2 :(AWS login-credentials)
+
+![login-terrs](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/da4df432-6953-4e43-999e-f2301a956dce)
 
 
 
