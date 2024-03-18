@@ -63,6 +63,10 @@ Now , Create provider block:
     
 "aws" is the name of the provider. This name must match the provider's name specified in the required_providers block.
 
+region specifies the AWS region,
+
+profile specifies the name of the AWS profile, Terraform will use the access key ID and secret access key associated with this profile for authentication.
+
 ![login-terrs](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/da4df432-6953-4e43-999e-f2301a956dce)
 
 
