@@ -138,11 +138,14 @@ Here i put varibles which call in resource.
 ![ebs-tera](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/4273526b-8987-4d70-98c8-e5404d2bba5f)
  
 
+⚡Step-7 : (Configuration-install httpd and start service)
 
 
+     
+     #notepad null_httpd.tf
 
 
-
+![null-httpd](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/4ac99df2-c457-45fd-b381-36b15ce28c5a)
 
 
 
