@@ -70,8 +70,13 @@ profile specifies the name of the AWS profile, Terraform will use the access key
 ![login-terrs](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/da4df432-6953-4e43-999e-f2301a956dce)
 
 
+⚡Step-3 : (terraform init)
 
+"terraform init" command initializes a Terraform working directory, installing necessary plugins and initializing backend configurations.
 
+  #terraform init
+
+ 
 
 
 
