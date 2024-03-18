@@ -245,6 +245,15 @@ On AWS console see instance and volume created:
 
 
 
+💥After destroy 💥
+
+After terraform destroy command use then automatically local-exec provisioner run and store file in local machine .
+
+
+     #terraform destroy
+     
+![Terraform-destry](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/af017c5e-7c3b-4ea2-b0c1-e15ee3d4875b)
+
 
 
 
