@@ -79,8 +79,14 @@ profile specifies the name of the AWS profile, Terraform will use the access key
 
  ![teraf](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/02a301de-75e0-4bde-8d33-bbfd7f03fd7f)
 
- 
-      
+
+ ⚡Step-4 :(EC2-instance block)
+
+
+      #notepad resource_ec2.tf
+
+![ec2-file](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/ffea9e24-62b9-4738-9668-efb83635eacf)
+
 
  
 
