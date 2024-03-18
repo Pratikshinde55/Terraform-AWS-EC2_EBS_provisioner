@@ -110,11 +110,14 @@ Here i put varibles which call in resource.
 ![variable-tera](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/79721873-987a-449f-a5f2-0bca02401de8)
 
  
+⚡Step-6 : (create 'ebs' volume and 'attached' with 'ec2')
+
+
+     #notepad resource_ebs.tf
 
 
 
-
-
+![ebs-tera](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/4273526b-8987-4d70-98c8-e5404d2bba5f)
 
 
 
