@@ -1,5 +1,5 @@
 # "File for plugin with AWS provider"
-#  provider_aws.tf
+# File name:-- provider_aws.tf
 terraform {
      required_providers {
          aws = {
@@ -12,7 +12,7 @@ terraform {
 
 
 # "File for login with AWS , i use AWS CLI tool for local access and secret key access:"
-# provider_cre.tf
+# File name:-- provider_cre.tf
 provider "aws" {
         region = "ap-south-1"
         profile = "default"
@@ -22,7 +22,7 @@ provider "aws" {
 
 
 #"Varibles for resource atribute"
-#file name: variables.tf
+#file name:-- variables.tf
 variable "amiID" {
       default = "ami-013168dc3850ef002"
 }
@@ -39,7 +39,7 @@ variable "ebsName" {
 
 
 #Launch EC2 instance 
-#cat resource_ec2.tf
+# File name:-- resource_ec2.tf
 resource "aws_instance" "os1" {
       ami = var.amiID
       key_name = "psAWS"
@@ -53,7 +53,7 @@ resource "aws_instance" "os1" {
 
 
 # file name:-- cat resource_ebs.tf
-# create ebs volume and attach with ec2
+# "create ebs volume and attach with ec2"
 resource "aws_ebs_volume" "myvol" {
   availability_zone = aws_instance.os1.availability_zone
   size             = 1
@@ -96,7 +96,7 @@ resource "null_resource" "Ec2_config" {
 
 
 # File name:-- " null_resource.tf"
-#null resource  for creating webpage and mount folder
+# null resource  for creating webpage and mount folder
 resource "null_resource" "volumenull" {
   connection {
     type        = "ssh"
@@ -120,7 +120,7 @@ resource "null_resource" "volumenull" {
 
 
 # File name :--  "null_resource_loacl.tf"
-# local configuration - local-exec <<--- this work when destroy setup
+# local configuration - "local-exec" <<--- this work when destroy setup
 resource "null_resource" "localCALL" {
 
        provisioner "local-exec" {
