@@ -256,4 +256,9 @@ After terraform destroy command use then automatically local-exec provisioner ru
 
 
 
+☀️ All files put in same folder then run all set-up:
 
+![list-tera-manifest](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/419d7b2d-b7da-4b9c-bf9c-de47d0bc0d69)
+
+
+Here, terraform.tfstate file automatic created by terraform: in this file state are collected (current state )
