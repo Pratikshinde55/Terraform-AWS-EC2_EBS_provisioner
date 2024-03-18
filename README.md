@@ -52,6 +52,12 @@ required_version: specifies the minimum Terraform version required to apply the 
 
 ⚡Step-2 :(AWS login-credentials)
 
+Here i use "AWS CLI " tool for login , for this i create IAM user on AWS & get access_key, secret_key and paste on cli .Use Default profile:
+
+![acees-aws-cli](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/011c43cd-e582-4ef1-be97-e6a494095077)
+
+Now , Create provider block:
+
 ![login-terrs](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/da4df432-6953-4e43-999e-f2301a956dce)
 
 
