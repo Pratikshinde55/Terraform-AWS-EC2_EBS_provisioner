@@ -82,6 +82,14 @@ profile specifies the name of the AWS profile, Terraform will use the access key
 
  ⚡Step-4 :(EC2-instance block)
 
+ami : his specifies the Amazon Machine Image (AMI) ID to use for launching the EC2 instance.
+
+key_name : This specifies the name of the key pair to use for SSH authentication when accessing the EC2 instance.
+
+vpc_security_group_ids : Security groups control inbound and outbound traffic to the instance.
+
+instance_type : This specifies the instance type for the EC2 instance.
+
 
       #notepad resource_ec2.tf
 
