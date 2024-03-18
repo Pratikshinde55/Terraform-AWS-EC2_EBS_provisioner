@@ -225,8 +225,8 @@ command for run file with non-interactive :
 
       #terraform apply -auto-approve
 
+![terraform-applycmd](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/e6e33887-6bd3-4ff4-aa95-714d49567340)
 
-![terraform-applycmd](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/045d23d0-635c-4acf-9dc8-ddfa2e99b2cf)
 
 
 
