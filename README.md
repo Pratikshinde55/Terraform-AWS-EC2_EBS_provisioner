@@ -232,8 +232,7 @@ command for run file with non-interactive :
 
 check on Browser (public ip of instance)
 
-![Screenshot 2024-03-17 201220](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/b383cead-166c-4446-abbd- 
-2d800edfd1b9)
+ ![Screenshot 2024-03-17 201220](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/346cf40e-f297-427d-bb13-63b9ef5d7630)
 
 
 Here :
