@@ -193,6 +193,41 @@ command = The command attribute specifies the command to be executed locally whe
 ![destroy](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/4df26a8b-df40-4de4-9954-a60c893892f7)
 
 
+⚡Step-10 : (Terraforn apply)
+
+now apply terraform in one command the whole infrastructure and configuration.
+
+Note:
+
+Null is one kind of provider to use null resource need to install null ,
+
+
+    #terraform init -upgrade
+
+command for syntax is correct or not :
+
+
+    #terraform validate
+
+command for check plan :
+
+
+    #terraform plan
+
+command for run file :
+
+
+     #terraform apply
+     #terraform.exe apply
+
+command for run file with non-interactive :
+
+
+      #terraform apply -auto-approve
+
+
+![terraform-applycmd](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/045d23d0-635c-4acf-9dc8-ddfa2e99b2cf)
+
 
 
 
