@@ -112,13 +112,31 @@ Here i put varibles which call in resource.
  
 ⚡Step-6 : (create 'ebs' volume and 'attached' with 'ec2')
 
+"aws_ebs_volume" : this is resource type for create EBS volume.
+ 
+ availability_zone = It is attribute that define zone where we want to create EBS volume such as ap-south-1a ,ap-south-1b , ap-south-1c.
+ here use attribute 'referance aws_instance.os1.availability_zone' it means after launching EC2 instance it automatically take its  availability_zone.
+
+ size = Size attribute  specifies size of volume in GB.
+
+ tag = tags attribute specifies the tags to apply to the EBS volume.
+ 
+ "aws_volume_attachment" : It is resource Type for attaching EBS volume to EC2 instance.
+
+ device_name = device_name attribute specifies the device name on the EC2 instance where the EBS volume will be attached.
+
+ volume_id = The volume_id attribute specifies the ID of the EBS volume to attach. & here use "attribute references" it means when EBS_volume craete this 
+   attribute references automatic take volume id.
+
+ instance_id : The volume_id attribute specifies the ID of the EBS volume to attach, & here i use "attribute references" aws_instance.os1.id it defines 
+ when instance launch it automatically take instance id.
+
 
      #notepad resource_ebs.tf
 
 
-
 ![ebs-tera](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/4273526b-8987-4d70-98c8-e5404d2bba5f)
-
+ 
 
 
 
