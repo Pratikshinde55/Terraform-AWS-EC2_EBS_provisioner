@@ -1,3 +1,4 @@
+
 # Terraform-AWSprovider-webserver-configuration
 
 
@@ -42,4 +43,32 @@ In Terraform, the "terraform" block is a mandatory block that is used to define 
 required_providers: To plugin with provider
 
 required_version: specifies the minimum Terraform version required to apply the configuration.
+
+![pro-plugin](https://github.com/Pratikshinde55/Terraform-AWSprovider-webserver-configuration/assets/145910708/252be755-95e4-462a-a4fc-d16d11b9b7c2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
