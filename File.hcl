@@ -1,7 +1,7 @@
-#"Automating AWS Infrastructure Deployment and Configuration with Terraform"
+###..."Automating AWS Infrastructure Deployment and Configuration with Terraform"...###
 
-# "File for plugin with AWS provider"
-# File name:-- provider_aws.tf
+################ "File for plugin with AWS provider"#####################
+                 # File name:-- provider_aws.tf
 terraform {
      required_providers {
          aws = {
@@ -13,8 +13,8 @@ terraform {
 
 
 
-# "File for login with AWS , i use AWS CLI tool for local access and secret key access:"
-# File name:-- provider_cre.tf
+#################### "File for login with AWS , i use AWS CLI tool for local access and secret key access:"##########
+                    # File name:-- provider_cre.tf
 provider "aws" {
         region = "ap-south-1"
         profile = "default"
@@ -23,8 +23,8 @@ provider "aws" {
 
 
 
-#"Varibles for resource atribute"
-#file name:-- variables.tf
+############################"Varibles for resource atribute"###############################
+                           #file name:-- variables.tf
 variable "amiID" {
       default = "ami-013168dc3850ef002"
 }
@@ -40,8 +40,8 @@ variable "ebsName" {
 
 
 
-#Launch EC2 instance 
-# File name:-- resource_ec2.tf
+######################### File for Launch EC2 instance  #######################
+                         # File name:-- resource_ec2.tf
 resource "aws_instance" "os1" {
       ami = var.amiID
       key_name = "psAWS"
@@ -54,8 +54,8 @@ resource "aws_instance" "os1" {
 
 
 
-# file name:-- cat resource_ebs.tf
-# "create ebs volume and attach with ec2"
+######################### "create ebs volume and attach with ec2" ###########################
+                         # file name:-- cat resource_ebs.tf
 resource "aws_ebs_volume" "myvol" {
   availability_zone = aws_instance.os1.availability_zone
   size             = 1
@@ -71,9 +71,9 @@ resource "aws_volume_attachment" "my_ec2_ebs" {
 
 
 
-# File name:--- null_httpd.tf
-#null resource for" httpd install and start service"
-# NOTE --- "# terraform init -upgrade "  << -- file upgarte terraform will update the dependency lock file
+######################### "Using null_resource & provisioner for httpd install and start service"##########################
+                         # File name:--- null_httpd.tf
+                         # NOTE --- "# terraform init -upgrade "  << -- file upgarte terraform will update the dependency lock file
 resource "null_resource" "Ec2_config" {
   connection {
     type        = "ssh"
@@ -97,8 +97,8 @@ resource "null_resource" "Ec2_config" {
 
 
 
-# File name:-- " null_resource.tf"
-# null resource  for creating webpage and mount folder
+################################# "null resource and provisioner for creating webpage and mount folder" ###############################
+                                #    File name:-- " null_resource.tf"
 resource "null_resource" "volumenull" {
   connection {
     type        = "ssh"
@@ -121,8 +121,8 @@ resource "null_resource" "volumenull" {
 }
 
 
-# File name :--  "null_resource_loacl.tf"
-# local configuration - "local-exec" <<--- this work when destroy setup
+######################### "local configuration - "local-exec" provisioner <<--- this work when destroy setup" #############################
+                        # File name :--  "null_resource_loacl.tf"
 resource "null_resource" "localCALL" {
 
        provisioner "local-exec" {
