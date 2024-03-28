@@ -58,7 +58,7 @@ Create "IAM" user in AWS console & attach "PowerUseraAccess".
 
 Go to created user in my case "pratikuser" , Click on access key & press "create access key" .
 
-'Use case' interface show select "application running on aws compute service".
+'Use case' interface show select "application running on aws compute service". Here get access_key, secret_key ,copy this keys.
 
 ![Screenshot 2024-03-26 205110](https://github.com/Pratikshinde55/Terraform-AWS-EC2_EBS_provisioner/assets/145910708/582423bf-4bfb-4d1c-a6ad-b67a1a029276)
 
