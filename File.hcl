@@ -98,6 +98,8 @@ resource "null_resource" "Ec2_config" {
 
 
 ################################# "null resource and provisioner for creating webpage and mount folder" ###############################
+#note : limitation of this code is name of /dev/sdh we give but after destroy and name of disk is auto changed , use cmd  on instance for chack
+#fdisk -l  #sudo df -X
                                 #    File name:-- " null_resource.tf"
 resource "null_resource" "volumenull" {
   connection {
