@@ -52,6 +52,11 @@ required_version: specifies the minimum Terraform version required to apply the 
 
 ⚡Step-2 :(AWS login-credentials)⚡
 
+IAM user in AWS console:
+
+![Screenshot 2024-03-26 204826](https://github.com/Pratikshinde55/Terraform-AWS-EC2_EBS_provisioner/assets/145910708/492fb75c-82e3-4807-8e86-7f02b4017c6a)
+
+
 Here i use "AWS CLI " tool for login , for this i create IAM user on AWS & get access_key, secret_key and paste on cli .Use Default profile:
 (static credential)
 
