@@ -40,7 +40,7 @@ variable "ebsName" {
 
 
 
-######################### File for Launch EC2 instance  #######################
+######################### File for Launch EC2 instance  ####################### Note : give own "vpc_security_group_ids", and also key name
                          # File name:-- resource_ec2.tf
 resource "aws_instance" "os1" {
       ami = var.amiID
@@ -71,7 +71,7 @@ resource "aws_volume_attachment" "my_ec2_ebs" {
 
 
 
-######################### "Using null_resource & provisioner for httpd install and start service"##########################
+######################### "Using null_resource & provisioner for httpd install and start service"##########################  
                          # File name:--- null_httpd.tf
                          # NOTE --- "# terraform init -upgrade "  << -- file upgarte terraform will update the dependency lock file
 resource "null_resource" "Ec2_config" {
