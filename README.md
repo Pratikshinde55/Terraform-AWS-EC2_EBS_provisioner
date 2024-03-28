@@ -61,7 +61,7 @@ Go to created user in my case "pratikuser" , Click on access key & press "create
 'Use case' interface show select "application running on aws compute service". Here get access_key, secret_key ,copy this keys.
 
 
-![Screenshot 2024-03-26 205028](https://github.com/Pratikshinde55/Terraform-AWS-EC2_EBS_provisioner/assets/145910708/f5206676-d631-41fd-87d9-c5b795bf75d1)
+![Screenshot 2024-03-26 205028](https://github.com/Pratikshinde55/Terraform-AWS-EC2_EBS_provisioner/assets/145910708/97e1dfc4-34e0-4ee8-9c52-d8061f8ca582)
 
 
 Here i use "AWS CLI " tool for login , for this i create IAM user on AWS & get access_key, secret_key and paste on cli .Use Default profile:
